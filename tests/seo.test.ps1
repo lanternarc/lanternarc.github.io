@@ -17,8 +17,9 @@ foreach ($page in $pages) {
     '<meta property="og:title"',
     '<meta property="og:description"',
     '<meta property="og:url"',
-    '<meta property="og:image"',
+    '<meta property="og:image" content="https://lanternarc.github.io/assets/social-card.png">',
     '<meta name="twitter:card" content="summary_large_image">',
+    '<meta name="twitter:image" content="https://lanternarc.github.io/assets/social-card.png">',
     '<link rel="manifest" href="/site.webmanifest">',
     '<link rel="icon" type="image/png" href="/assets/lantern-arc-logo.png">',
     '<script type="application/ld+json">'
@@ -35,8 +36,9 @@ $sitemap = Join-Path $root 'sitemap.xml'
 $manifest = Join-Path $root 'site.webmanifest'
 $noJekyll = Join-Path $root '.nojekyll'
 $notFound = Join-Path $root '404.html'
+$socialCard = Join-Path $root 'assets\social-card.png'
 
-foreach ($path in @($robots, $sitemap, $manifest, $noJekyll, $notFound)) {
+foreach ($path in @($robots, $sitemap, $manifest, $noJekyll, $notFound, $socialCard)) {
   if (-not (Test-Path -LiteralPath $path)) {
     throw "Missing SEO/deployment file: $(Split-Path -Leaf $path)"
   }
