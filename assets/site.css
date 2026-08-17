@@ -2,6 +2,7 @@
   --navy-950: #031c37;
   --navy-900: #0a2b4a;
   --navy-700: #29455f;
+  --gold-700: #805400;
   --gold-500: #fbbd3d;
   --gold-300: #fbe1b3;
   --gold-100: #f7f2e3;
@@ -53,6 +54,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -270,7 +272,7 @@ h3 {
 
 .eyebrow {
   margin-bottom: 0.7rem;
-  color: #9a6500;
+  color: var(--gold-700);
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -278,7 +280,7 @@ h3 {
 }
 
 .hero-copy h1 span {
-  color: #9a6500;
+  color: var(--gold-700);
 }
 
 .hero-lede {
@@ -381,7 +383,7 @@ h3 {
 }
 
 .process-flow li:not(:last-child)::after {
-  color: #9a6500;
+  color: var(--gold-700);
   content: "→";
 }
 
@@ -936,7 +938,7 @@ h3 {
 .signal-flow span:not(:last-child)::after {
   position: absolute;
   right: -0.55rem;
-  color: #9a6500;
+  color: var(--gold-700);
   content: "→";
   transform: translateX(50%);
 }
