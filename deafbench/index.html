@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeafBench | Lantern Arc</title>
+  <meta name="description" content="DeafBench benchmarks how speech, captioning, and AI systems perform for Deaf and Hard-of-Hearing accessibility, including critical-information preservation, latency, and regressions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body class="inner-page deafbench-page">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="Lantern Arc home">
+        <img class="brand-mark" src="/assets/lantern-arc-logo.png" alt="" width="44" height="44">
+        <span>Lantern Arc</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/deafaccess/">Platform</a>
+        <a href="/#labs">Labs</a>
+        <a href="/deafbench/">Research</a>
+        <a href="/about/">About</a>
+      </nav>
+      <a class="button button-secondary header-github" href="https://github.com/lanternarc">View GitHub</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero page-hero-teal">
+      <div class="shell page-hero-grid">
+        <div>
+          <p class="eyebrow">DeafBench by Lantern Arc</p>
+          <h1>Benchmark speech AI by what actually matters.</h1>
+          <p class="page-lede">DeafBench measures accuracy, critical-information preservation, latency, and regressions across speech, captioning, and AI systems.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/lanternarc/DeafBench">View source on GitHub</a>
+            <a class="button button-secondary" href="#measurements">What it measures</a>
+          </div>
+        </div>
+        <aside class="benchmark-card" aria-label="DeafBench evaluation dimensions">
+          <p class="eyebrow">Evaluation dimensions</p>
+          <dl class="metric-list">
+            <div><dt>Accuracy</dt><dd>WER and related baseline metrics</dd></div>
+            <div><dt>Critical information</dt><dd>Names, numbers, codes, dates, amounts, warnings</dd></div>
+            <div><dt>Latency</dt><dd>Whether captions arrive in time to remain usable</dd></div>
+            <div><dt>Regression</dt><dd>Whether a candidate release makes access worse</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section id="measurements" class="section shell" aria-labelledby="measure-title">
+      <div class="section-heading">
+        <p class="eyebrow">Beyond one score</p>
+        <h2 id="measure-title">A low error rate can still hide a high-impact mistake.</h2>
+        <p>DeafBench keeps ordinary ASR metrics, but adds scoring for the information and timing that determine whether captions remain useful in real situations.</p>
+      </div>
+      <div class="outcome-grid">
+        <article><span class="outcome-number">01</span><h3>Typed critical information</h3><p>Score categories such as names, numbers, times, dates, codes, money, and other information where substitution can change the outcome.</p></article>
+        <article><span class="outcome-number">02</span><h3>Reproducible evaluation</h3><p>Use frozen manifests, model adapters, and repeatable inputs so results can be compared without quietly changing the benchmark.</p></article>
+        <article><span class="outcome-number">03</span><h3>Accessibility regressions</h3><p>Compare model or product versions and surface cases where a release improves an aggregate score while making important scenarios worse.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-tinted" aria-labelledby="workflow-title">
+      <div class="shell split-panel">
+        <div>
+          <p class="eyebrow">Research workflow</p>
+          <h2 id="workflow-title">Careful claims require visible methodology.</h2>
+          <p>DeafBench is built to make its corpus, scoring, model comparison lanes, and limitations inspectable. Results should be reproducible before they become public claims.</p>
+        </div>
+        <div class="evidence-stack">
+          <div><span>01</span><strong>Freeze the input</strong><p>Version benchmark manifests and test data.</p></div>
+          <div><span>02</span><strong>Run adapters consistently</strong><p>Normalize model interfaces without hiding differences.</p></div>
+          <div><span>03</span><strong>Score multiple dimensions</strong><p>Keep baseline error metrics beside accessibility-critical scoring.</p></div>
+          <div><span>04</span><strong>Publish limitations</strong><p>State corpus scope, uncertainty, and what the evidence does not prove.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" aria-labelledby="open-title">
+      <div class="research-panel">
+        <div>
+          <p class="eyebrow">Open source</p>
+          <h2 id="open-title">Review the benchmark, not just the result.</h2>
+          <p>DeafBench is public so researchers, accessibility practitioners, and engineers can inspect the implementation and challenge the methodology.</p>
+        </div>
+        <div class="research-actions">
+          <a class="button button-primary" href="https://github.com/lanternarc/DeafBench">Open DeafBench</a>
+          <a class="button button-secondary" href="https://github.com/lanternarc/DeafBench/issues">Give technical feedback</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand"><img src="/assets/lantern-arc-logo.png" alt="" width="44" height="44"><div><strong>Lantern Arc</strong><span>Make hidden accessibility failures visible.</span></div></div>
+      <nav aria-label="Footer navigation"><a href="/deafaccess/">DeafAccess</a><a href="/deafbench/">DeafBench</a><a href="https://github.com/lanternarc">GitHub</a><a href="/about/">About</a></nav>
+    </div>
+  </footer>
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>
