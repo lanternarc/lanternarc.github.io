@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lantern Arc | Accessibility engineering tools</title>
+  <meta name="description" content="Lantern Arc builds accessibility engineering tools that help teams find, measure, prove, fix, and retest accessibility failures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="Lantern Arc home">
+        <img class="brand-mark" src="/assets/lantern-arc-logo.png" alt="" width="44" height="44">
+        <span>Lantern Arc</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/deafaccess/">Platform</a>
+        <a href="#labs">Labs</a>
+        <a href="/deafbench/">Research</a>
+        <a href="/about/">About</a>
+      </nav>
+      <a class="button button-secondary header-github" href="https://github.com/lanternarc">View GitHub</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-logo-wrap">
+          <img src="/assets/lantern-arc-logo.png" alt="" width="320" height="320">
+        </div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Accessibility engineering for real-world communication</p>
+        <h1 id="hero-title">Make hidden accessibility failures <span>visible.</span></h1>
+        <p class="hero-lede">Lantern Arc builds accessibility engineering tools for AI, software, communication systems, and connected experiences.</p>
+        <p class="hero-support">We focus on whether critical information and communication remain usable for Deaf and Hard-of-Hearing people in real use.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="/deafaccess/">Explore DeafAccess</a>
+          <a class="button button-secondary" href="https://github.com/lanternarc">View on GitHub</a>
+        </div>
+      </div>
+      <aside class="hero-principles" aria-label="Lantern Arc principles">
+        <div class="principle">
+          <span class="principle-icon" aria-hidden="true">01</span>
+          <div><strong>Find the gaps</strong><span>Discover failures that normal QA can miss.</span></div>
+        </div>
+        <div class="principle">
+          <span class="principle-icon" aria-hidden="true">02</span>
+          <div><strong>Measure what matters</strong><span>Quantify impact with reproducible evidence.</span></div>
+        </div>
+        <div class="principle">
+          <span class="principle-icon" aria-hidden="true">03</span>
+          <div><strong>Drive improvement</strong><span>Turn findings into fixes and retests.</span></div>
+        </div>
+        <div class="principle">
+          <span class="principle-icon" aria-hidden="true">04</span>
+          <div><strong>Build with community</strong><span>Stay open, specific, and accountable.</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="process-band" aria-labelledby="process-title">
+      <div class="shell process-inner">
+        <div>
+          <p class="eyebrow">How Lantern Arc works</p>
+          <h2 id="process-title">Evidence should lead to action.</h2>
+        </div>
+        <ol class="process-flow" aria-label="Accessibility engineering workflow">
+          <li>Detect</li><li>Measure</li><li>Prove</li><li>Prioritize</li><li>Fix</li><li>Retest</li><li>Verify</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section shell" aria-labelledby="products-title">
+      <div class="section-heading">
+        <p class="eyebrow">Products</p>
+        <h2 id="products-title">One company. Clear product roles.</h2>
+        <p>Lantern Arc is the parent brand. DeafAccess is the flagship accessibility platform. DeafBench is the benchmarking and evaluation product.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card product-deafaccess">
+          <div class="product-kicker"><span class="product-symbol">DA</span><span>DeafAccess by Lantern Arc</span></div>
+          <h3>Test whether critical information stays accessible.</h3>
+          <p>DeafAccess helps teams detect, prove, prioritize, fix, and retest communication failures affecting Deaf and Hard-of-Hearing users.</p>
+          <ul class="feature-list">
+            <li>Specialized accessibility Labs</li>
+            <li>Evidence and risk workflows</li>
+            <li>Regression testing and retesting</li>
+            <li>SignalDesk finding-to-fix workflow</li>
+          </ul>
+          <a class="text-link" href="/deafaccess/">Explore DeafAccess <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="product-card product-deafbench">
+          <div class="product-kicker"><span class="product-symbol">DB</span><span>DeafBench by Lantern Arc</span></div>
+          <h3>Benchmark speech AI by what actually matters.</h3>
+          <p>DeafBench measures accuracy, critical-information preservation, latency, and regressions across speech and captioning systems.</p>
+          <ul class="feature-list">
+            <li>ASR and caption evaluation</li>
+            <li>Critical-information scoring</li>
+            <li>Reproducible benchmark manifests</li>
+            <li>Open-source research workflows</li>
+          </ul>
+          <a class="text-link" href="/deafbench/">Explore DeafBench <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="labs" class="section section-tinted" aria-labelledby="labs-title">
+      <div class="shell">
+        <div class="section-heading narrow">
+          <p class="eyebrow">DeafAccess capability network</p>
+          <h2 id="labs-title">Purpose-built Labs for real-world access.</h2>
+          <p>Labs are specialized testing capabilities inside DeafAccess, organized around the ways information can be lost, changed, delayed, or made unusable.</p>
+        </div>
+        <div id="lab-groups" class="lab-groups" aria-live="off"></div>
+      </div>
+    </section>
+
+    <section class="section shell" aria-labelledby="research-title">
+      <div class="research-panel">
+        <div>
+          <p class="eyebrow">Open research</p>
+          <h2 id="research-title">Evidence, not assumptions.</h2>
+          <p>DeafBench gives Lantern Arc a public technical layer for evaluating speech, captioning, and AI systems with reproducible methodology and clear limitations.</p>
+        </div>
+        <div class="research-actions">
+          <a class="button button-primary" href="https://github.com/lanternarc/DeafBench">View DeafBench source</a>
+          <a class="button button-secondary" href="/deafbench/">Read the overview</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/lantern-arc-logo.png" alt="" width="44" height="44">
+        <div><strong>Lantern Arc</strong><span>Make hidden accessibility failures visible.</span></div>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="/deafaccess/">DeafAccess</a>
+        <a href="/deafbench/">DeafBench</a>
+        <a href="https://github.com/lanternarc">GitHub</a>
+        <a href="/about/">About</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/site.js" defer></script>
+</body>
+</html>
