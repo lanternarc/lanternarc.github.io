@@ -119,7 +119,75 @@
           <h2 id="labs-title">Purpose-built Labs for real-world access.</h2>
           <p>Labs are specialized testing capabilities inside DeafAccess, organized around the ways information can be lost, changed, delayed, or made unusable.</p>
         </div>
-        <div id="lab-groups" class="lab-groups" aria-live="off"></div>
+        <p class="roadmap-note"><strong>30-capability roadmap:</strong> these Labs are specialized testing capabilities inside DeafAccess, not separate companies or standalone brands.</p>
+
+        <div id="lab-groups" class="lab-groups">
+          <section class="lab-group" aria-labelledby="labs-ai-title">
+            <div class="lab-group-heading">
+              <span class="lab-group-index" aria-hidden="true">01</span>
+              <div><h3 id="labs-ai-title">AI &amp; Communication</h3><p>Speech, captions, agents, context, critical information, and regression evidence.</p></div>
+            </div>
+            <div class="lab-grid">
+              <article class="lab-card"><span class="lab-code">DB</span><h4>DeafBench</h4><p>Benchmark speech, captioning, and AI behavior with reproducible evaluation.</p></article>
+              <article class="lab-card"><span class="lab-code">CC</span><h4>CaptionLab</h4><p>Test caption quality, completeness, timing, and critical-information preservation.</p></article>
+              <article class="lab-card"><span class="lab-code">CM</span><h4>CommLab</h4><p>Evaluate communication workflows across chat, meetings, calls, and messaging.</p></article>
+              <article class="lab-card"><span class="lab-code">AG</span><h4>AgentLab</h4><p>Test voice and multimodal agents for accessible interaction and recovery.</p></article>
+              <article class="lab-card"><span class="lab-code">CI</span><h4>CriticalInfoLab</h4><p>Measure whether names, numbers, codes, dates, amounts, and warnings survive intact.</p></article>
+              <article class="lab-card"><span class="lab-code">CX</span><h4>ContextLab</h4><p>Test whether context needed to understand or act is preserved across modalities.</p></article>
+              <article class="lab-card"><span class="lab-code">SC</span><h4>ScenarioLab</h4><p>Run realistic end-to-end accessibility scenarios instead of isolated checks.</p></article>
+              <article class="lab-card"><span class="lab-code">NZ</span><h4>NoiseLab</h4><p>Stress communication systems under background noise and difficult input conditions.</p></article>
+              <article class="lab-card"><span class="lab-code">CP</span><h4>CaptionPersonalizationLab</h4><p>Evaluate caption controls, readability preferences, and user-level customization.</p></article>
+              <article class="lab-card"><span class="lab-code">MP</span><h4>MultimodalParityLab</h4><p>Measure what gets lost between audio, text, visual, and haptic modes.</p></article>
+              <article class="lab-card"><span class="lab-code">RG</span><h4>RegressionLab</h4><p>Detect accessibility regressions between product, model, or configuration releases.</p></article>
+              <article class="lab-card"><span class="lab-code">DT</span><h4>DataTrustLab</h4><p>Check evaluation data integrity, provenance, reproducibility, and evidence quality.</p></article>
+            </div>
+          </section>
+
+          <section class="lab-group" aria-labelledby="labs-safety-title">
+            <div class="lab-group-heading">
+              <span class="lab-group-index" aria-hidden="true">02</span>
+              <div><h3 id="labs-safety-title">Safety &amp; Emergency</h3><p>Alerts, emergency communication, real-time text, recovery, and public-space access.</p></div>
+            </div>
+            <div class="lab-grid">
+              <article class="lab-card"><span class="lab-code">AL</span><h4>AlertLab</h4><p>Test whether important alerts have usable visual, text, or haptic equivalents.</p></article>
+              <article class="lab-card"><span class="lab-code">EM</span><h4>EmergencyLab</h4><p>Evaluate urgent communication flows where delay or information loss can raise risk.</p></article>
+              <article class="lab-card"><span class="lab-code">RT</span><h4>RTTLab</h4><p>Test real-time text continuity, timing, interoperability, and failure recovery.</p></article>
+              <article class="lab-card"><span class="lab-code">RC</span><h4>RecoveryLab</h4><p>Measure whether a user can recover when captions, alerts, or communication features fail.</p></article>
+              <article class="lab-card"><span class="lab-code">PS</span><h4>PublicSpaceLab</h4><p>Evaluate announcements, queues, kiosks, signage, and shared environments.</p></article>
+              <article class="lab-card"><span class="lab-code">HR</span><h4>HumanReviewLab</h4><p>Support structured human review where automated evidence is not enough.</p></article>
+            </div>
+          </section>
+
+          <section class="lab-group" aria-labelledby="labs-devices-title">
+            <div class="lab-group-heading">
+              <span class="lab-group-index" aria-hidden="true">03</span>
+              <div><h3 id="labs-devices-title">Devices &amp; Hardware</h3><p>Sound cues, haptics, hearing devices, broadcast audio, vehicles, and vendor integrations.</p></div>
+            </div>
+            <div class="lab-grid">
+              <article class="lab-card"><span class="lab-code">SQ</span><h4>SoundCueLab</h4><p>Identify sound-only information and verify meaningful non-audio alternatives.</p></article>
+              <article class="lab-card"><span class="lab-code">HP</span><h4>HapticLab</h4><p>Evaluate vibration and tactile signals for clarity, timing, and equivalent meaning.</p></article>
+              <article class="lab-card"><span class="lab-code">HD</span><h4>HearingDeviceLab</h4><p>Test connected-device workflows involving hearing aids and cochlear implant ecosystems.</p></article>
+              <article class="lab-card"><span class="lab-code">AU</span><h4>AuracastLab</h4><p>Evaluate broadcast-audio discovery, connection, control, and accessible fallback paths.</p></article>
+              <article class="lab-card"><span class="lab-code">AV</span><h4>AutomotiveAccessibilityLab</h4><p>Test vehicle alerts, infotainment, navigation, and connected-car communication for non-audio access.</p></article>
+              <article class="lab-card"><span class="lab-code">VN</span><h4>VendorLab</h4><p>Evaluate third-party integrations and dependencies that affect accessible outcomes.</p></article>
+            </div>
+          </section>
+
+          <section class="lab-group" aria-labelledby="labs-experience-title">
+            <div class="lab-group-heading">
+              <span class="lab-group-index" aria-hidden="true">04</span>
+              <div><h3 id="labs-experience-title">Media &amp; Experience</h3><p>User experience, media, sign language, interpreting, DeafBlind access, and gaming.</p></div>
+            </div>
+            <div class="lab-grid">
+              <article class="lab-card"><span class="lab-code">UX</span><h4>UXLab</h4><p>Test whether accessible controls and workflows remain understandable and operable end to end.</p></article>
+              <article class="lab-card"><span class="lab-code">MD</span><h4>MediaLab</h4><p>Evaluate captions, transcripts, player controls, live media, and recorded content.</p></article>
+              <article class="lab-card"><span class="lab-code">SL</span><h4>SignLab</h4><p>Evaluate sign-language experiences, presentation, controls, and modality handoffs.</p></article>
+              <article class="lab-card"><span class="lab-code">IN</span><h4>InterpreterLab</h4><p>Test interpreter access workflows, handoffs, scheduling, visibility, and continuity.</p></article>
+              <article class="lab-card"><span class="lab-code">DBL</span><h4>DeafBlindLab</h4><p>Evaluate combined visual, auditory, tactile, and text access requirements.</p></article>
+              <article class="lab-card"><span class="lab-code">GA</span><h4>GamingAccessibilityLab</h4><p>Test gameplay communication, cues, captions, multiplayer access, and recovery.</p></article>
+            </div>
+          </section>
+        </div>
       </div>
     </section>
 
