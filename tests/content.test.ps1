@@ -2,6 +2,7 @@ $ErrorActionPreference = 'Stop'
 
 $root = Split-Path -Parent $PSScriptRoot
 $homeHtml = Get-Content -LiteralPath (Join-Path $root 'index.html') -Raw
+$deafAccessHtml = Get-Content -LiteralPath (Join-Path $root 'deafaccess\index.html') -Raw
 $css = Get-Content -LiteralPath (Join-Path $root 'assets\site.css') -Raw
 
 $labs = @(
@@ -75,4 +76,12 @@ if ($homeHtml -match 'id="lab-groups"[^>]*>\s*</div>') {
   throw 'Lab network placeholder is still empty.'
 }
 
-Write-Host "PASS: 30 Labs, 4 groups, and approved palette tokens are present."
+if (-not $homeHtml.Contains('DeafAccess is in development')) {
+  throw 'Homepage must identify DeafAccess as in development.'
+}
+
+if (-not $deafAccessHtml.Contains('DeafAccess is in development')) {
+  throw 'DeafAccess page must identify the platform as in development.'
+}
+
+Write-Host "PASS: 30 Labs, 4 groups, brand palette, and product maturity copy are present."

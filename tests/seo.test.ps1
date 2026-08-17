@@ -18,10 +18,13 @@ foreach ($page in $pages) {
     '<meta property="og:description"',
     '<meta property="og:url"',
     '<meta property="og:image" content="https://lanternarc.github.io/assets/social-card.png">',
+    '<meta property="og:image:width" content="1200">',
+    '<meta property="og:image:height" content="630">',
     '<meta name="twitter:card" content="summary_large_image">',
     '<meta name="twitter:image" content="https://lanternarc.github.io/assets/social-card.png">',
     '<link rel="manifest" href="/site.webmanifest">',
-    '<link rel="icon" type="image/png" href="/assets/lantern-arc-logo.png">',
+    '<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">',
+    '<link rel="apple-touch-icon" sizes="192x192" href="/assets/icon-192.png">',
     '<script type="application/ld+json">'
   )
   foreach ($requirement in $requirements) {
@@ -37,8 +40,9 @@ $manifest = Join-Path $root 'site.webmanifest'
 $noJekyll = Join-Path $root '.nojekyll'
 $notFound = Join-Path $root '404.html'
 $socialCard = Join-Path $root 'assets\social-card.png'
+$favicon = Join-Path $root 'assets\favicon-48.png'
 
-foreach ($path in @($robots, $sitemap, $manifest, $noJekyll, $notFound, $socialCard)) {
+foreach ($path in @($robots, $sitemap, $manifest, $noJekyll, $notFound, $socialCard, $favicon)) {
   if (-not (Test-Path -LiteralPath $path)) {
     throw "Missing SEO/deployment file: $(Split-Path -Leaf $path)"
   }

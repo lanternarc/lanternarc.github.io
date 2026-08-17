@@ -330,7 +330,7 @@ h3 {
 }
 
 .principle strong,
-.principle span {
+.principle div > span {
   display: block;
 }
 
