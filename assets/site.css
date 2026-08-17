@@ -1043,6 +1043,30 @@ h3 {
   font-size: 0.86rem;
 }
 
+.not-found {
+  display: grid;
+  min-height: calc(100vh - 5rem);
+  place-items: center;
+  padding-block: 5rem;
+}
+
+.not-found > div {
+  max-width: 46rem;
+  text-align: center;
+}
+
+.not-found h1 {
+  margin-inline: auto;
+}
+
+.not-found .page-lede {
+  margin-inline: auto;
+}
+
+.not-found .hero-actions {
+  justify-content: center;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   background: var(--off-white);
